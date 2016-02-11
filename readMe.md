@@ -2,15 +2,20 @@
 
 ## What I want to do 
 
-Make a process in which a web designer will be able to quickly spool up a project that has a sass enabled, git versioning, hosting on gitHub, and uses the CMS as a data source for a twig override. Has a deploy process at the end that will push compiled css and js files out to AWS as well as finished html with StribTags to be placed in the article in Clickability.
+Make a process in which a web designer will be able to quickly spool up a project that has a sass enabled, git versioning, hosting on gitHub, and uses the CMS as a data source for a twig override. Has a deploy process at the end that will push compiled css and js files out to AWS as well as finished html with StribTags to be placed in the body (source) of the Clickability article.
 
 1. set up a project workflow
-	a. copy master dir
-		1. npm install:: this sets the project up with liveReload for:
+
+	a. copy master dir-npm install:: this sets the project up with liveReload for:
+
 			a. html
+
 			b. JSON - no more apps.startribune.com needed
+
 			c. CSS with SCSS
+
 			d. twig
+
 			e. JS and CoffeeScript
 
 	b. associate dir with gitHub on our news-dev repository
@@ -36,7 +41,7 @@ Make a process in which a web designer will be able to quickly spool up a projec
 ## Links
 	
 	gulp publishing to S3:  https://github.com/pgherveou/gulp-awspublish
-	
+
 	gulp using twigs:  https://www.npmjs.com/package/gulp-twig
 
 	http://www.zell-weekeat.com/responsive-typography/
