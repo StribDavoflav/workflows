@@ -1,0 +1,108 @@
+.hero {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  margin-bottom: 3em;
+  margin-top: -2px;
+  opacity:0;
+  background-image: url('http://stmedia.stimg.co/mooseCover2.jpg?w=2500');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  animation: introFade 5s 3s ease-out forwards;
+}
+
+@keyframes introFade {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+/* hero kerning*/
+.av {letter-spacing: -8px;}
+
+.scroll-label {
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+    font-family: $bentonSans;
+    font-size: 1em!important;
+    text-align: center;
+    margin-top: 36px!important;
+    position: absolute;
+    bottom: 20px;
+    left:50px;
+    width: 15%;
+    z-index: 2;
+    opacity: 0;
+    animation: introScrollFade 5s 7s ease-out forwards;
+
+    img {
+      display: block;
+      margin: 6px auto 0 auto;
+      width: 30px;
+  }
+}
+
+@keyframes introScrollFade {
+  from {opacity:0;}
+  to {opacity:.65;}
+}
+
+.mobile-hero {
+    display: none;
+}
+.isMobile .hero {
+    display: none;
+}
+
+  // .crop-gradient {
+  //     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&amp;0+30,0.65+76,1+100 */
+  //     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.65) 76%, rgba(0, 0, 0, 1) 100%);
+  //     /* FF3.6+ */
+  //     background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(76%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 1)));
+  //     /* Chrome,Safari4+ */
+  //     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.65) 76%, rgba(0, 0, 0, 1) 100%);
+  //     /* Chrome10+,Safari5.1+ */
+  //     background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.65) 76%, rgba(0, 0, 0, 1) 100%);
+  //     /* Opera 11.10+ */
+  //     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.65) 76%, rgba(0, 0, 0, 1) 100%);
+  //     /* IE10+ */
+  //     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.65) 76%, rgba(0, 0, 0, 1) 100%);
+  //     /* W3C */
+  //     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+  //     /* IE6-9 */
+  //     position: absolute;
+  //     width: 100%;
+  //     bottom: 0;
+  //     z-index: 1;
+  //     height: 0%;
+  // }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+
+ .av {letter-spacing: -6px;} 
+
+ .isMobile .mobile-hero {
+    background: url('http://stmedia.stimg.co/mobileMooseCover2.jpg') center center no-repeat;
+    background-size: cover;
+    top: -70px !important;
+    height: 450px;
+    background-color:#000;
+  }
+  
+  section.mobile-hero {
+    display: block;
+    width: 100%;
+    top: -70px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {} 
+@media only screen and (min-device-width: 768px) and (orientation: portrait) {
+  .mfp-bg { width: 1200px;  min-width: 100%; }
+  .mfp-wrap { width: 1200px;  min-width: 100%; }
+  .mobile-hero.mobile{
+      height: 600px;
+      min-width: 1024px;
+  }
+}

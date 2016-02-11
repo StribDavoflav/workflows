@@ -4,13 +4,25 @@
 //Compass imports
 @import "compass";
 @import "compass/css3/box-shadow";
-@import "compass/reset";
+@import "compass/css3/animation";
+// @import "compass/reset";
 
 //Core partials
 @import "variables";
-@import "mixins";
-@import "base";
-@import "modules";
+// @import "mixins";
+// @import "base";
+// @import "modules";
+
+//ST partials
+@import "st_base";
+@import "st_gallery";
+@import "st_graphics";
+@import "st_hero";
+@import "st_iframes";
+@import "st_image_packages";
+@import "st_images";
+@import "st_video";
+
 
 // JS partials
 @import "pixgrid";

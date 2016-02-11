@@ -1,0 +1,151 @@
+.dropCap {
+  float: left;
+  font-size: 5.3em;
+  line-height: 70%;
+  padding-right: 6px;
+  font-family: $whitmanDisplay !important;
+  margin-top: 6px;
+}
+
+.project-body {
+  visibility: hidden;
+  padding: 0 2%;
+}
+
+.intro {
+  width: 853px;
+  font-size: 2.35em;
+  margin-top: 0;
+  margin-bottom: .5em;
+  font-family: $whitmanDisplay;
+  line-height: 140%;
+}
+
+aside.article-share {
+  margin-top: 230px;
+}
+
+.topCaption {
+  z-index: 2;
+  width: 190px;
+  position: absolute;
+  right: -300px;
+  margin-top: 24px;
+}
+
+.article-byline-mod {
+  padding-bottom: 35px;
+}
+
+.article-byline {
+  border-right: none;
+  margin-top: 8px;
+}
+
+.article-byline a:hover {
+  color: #999;
+}
+
+.article-byline-mod:before {
+  display: none;
+}
+
+.article-byline-mod {
+  margin-top: 0;
+}
+
+.article-byline.notes {
+  font-size: .95em;
+}
+
+.article-dateline {
+  margin-top: 6px;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform:uppercase;
+  color: #fff;
+  font-family: $whitmanDisplay;
+  font-size: 5.55em;
+  line-height: 90%;
+  letter-spacing: -2px;
+  position: absolute;
+  top: 50px;
+  left:50px;
+  z-index: 2;
+  text-align: center;
+  width: 25%;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 1),2px 2px 5px rgba(0, 0, 0, .5);
+  opacity:0;
+  animation: introFade 2s 4s ease-in forwards;
+}
+
+.project-body h3 {
+  font-family: $whitmanDisplay;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 16px;
+  font-size: 2.2em;
+}
+
+.related-caption,
+.related-caption.package-caption {
+  padding-top: 12px;
+  @include clearfix;
+}
+
+.source {font-size:.85em;color:#666666;}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+
+  .intro {
+    width: 100%;
+    font-size:1.85em;
+  } 
+
+  aside.article-share {
+    margin-top: 0;
+  }
+
+  h4.mobile.home-logo{
+    @include clearfix;
+    margin-top:-50px
+  }
+
+  h1 {
+    font-size: 3.10em;
+    color:#000;
+    line-height: 100%;
+    top: 360px;
+    left: 0px; 
+    color:#fff;
+    width: 100%;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, .9);
+  }
+
+  .package-byline {
+    line-height:110%;
+  }
+
+  .project-body {
+    visibility: visible;
+    position: relative;
+    display: block;
+  }
+
+  .project-body h3{
+    margin-top: 30px;
+    font-size: 2em;
+  }
+
+  .desktop {
+    display: none;
+  }
+   
+  .topCaption,
+  .article-featured-gallery-mod {
+    display: none;
+  }
+
+}

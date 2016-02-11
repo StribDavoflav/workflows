@@ -1,1 +1,529 @@
-@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}body{background:#eedbba;font-family:"Inika",serif;font-size:1.1em}#content{color:#CC8E94;font-size:2em}.container{width:90%;max-width:1000px;margin:0 auto;position:relative}h1,h2,h3,h4,h5,h6{font-family:"Patua One",sans-serif;font-size:3em}h1{font-size:3.5em;margin-bottom:10px;color:#507356}@media (max-width: 700px){h1{font-size:2.2em}}h2{font-size:1.5em;color:#3E2B3D}p{font-size:1.3em;line-height:1.5em;color:#3E2B3D;margin-bottom:20px;margin-top:15px}section{padding:20px 0}.artgroup:after{content:"";display:table;clear:both}.city{background:url("../images/backgrounds/seattle_skyline.jpg") no-repeat 50% 20%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out}@media (min-width: 801px){.city{height:350px}}@media (max-width: 800px){.city{height:150px}}@media (max-width: 300px){.city{height:100px}}.city img.logo{position:absolute;right:0;top:0;width:50%;max-width:450px;min-width:250px}.featuredartists{background:#8D8862;border-top:20px solid #E4C691;border-bottom:50px solid #507356}.featuredartists h1{font-size:3em;color:#263729}@media (max-width: 700px){.featuredartists h1{font-size:2em}}.featuredartists h2{margin-top:20px;font-size:1.8em;color:#dcb570}@media (max-width: 700px){.featuredartists h2{display:none}}.featuredartists p{color:#314634}.featuredartists .artistlist{padding-bottom:20px}.featuredartists .artistlist h2{margin-top:5px;font-size:1.2em;color:#ecd7b2}.featuredartists .artistlist .item{min-width:95px;color:#6f6b4d;width:18%;float:left;padding:1%;text-align:center;position:relative}.featuredartists .artistlist .item>img{max-width:130px;margin:0 auto;display:block;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;width:100%}.potterypix{background:url("../images/backgrounds/pottery_workshop.jpg") no-repeat 50% 20%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out;border-bottom:50px solid #8D8862}@media (min-width: 801px){.potterypix{height:350px}}@media (max-width: 800px){.potterypix{height:150px}}@media (max-width: 300px){.potterypix{height:100px}}.aboutvenue img{float:right}.workshoppix{background:url("../images/backgrounds/woodworking_workshop.jpg") no-repeat 50% 20%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out;border-bottom:50px solid #8D8862}@media (min-width: 801px){.workshoppix{height:350px}}@media (max-width: 800px){.workshoppix{height:150px}}@media (max-width: 300px){.workshoppix{height:100px}}.ontour h1{color:#4d354c;font-size:3em;bottom:10px;right:10%}.ontour h2{font-size:1.8em;color:#8D8862;border-top:1px solid #8D8862;padding-top:5px}.ontour h3{font-size:1.3em;color:#6b4a69;padding-bottom:5px}.ontour img{float:right;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;padding-left:20px;width:20%;min-width:120px;max-width:160px}.pixgrid img{max-width:90px;display:block;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;padding:0 5px 5px 0;cursor:url(../images/misc/magnifying_glass.png),auto}.pixgrid .preview img{padding:0}.rclick .item{display:block;float:left}.rclick .item img{-moz-border-radius:none;-webkit-border-radius:none;border-radius:none}.rclick .preview{position:relative}.rclick .preview img{position:absolute;z-index:90;max-width:400px;display:block;border:1px solid #FCF4DC;margin:0;-moz-border-radius:none;-webkit-border-radius:none;border-radius:none;-moz-box-shadow:#000 5px 5px 12px;-webkit-box-shadow:#000 5px 5px 12px;box-shadow:#000 5px 5px 12px}
+@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+.dropCap {
+  float: left;
+  font-size: 5.3em;
+  line-height: 70%;
+  padding-right: 6px;
+  font-family: "Whitman Display", sans-serif !important;
+  margin-top: 6px;
+}
+
+.project-body {
+  visibility: hidden;
+  padding: 0 2%;
+}
+
+.intro {
+  width: 853px;
+  font-size: 2.35em;
+  margin-top: 0;
+  margin-bottom: .5em;
+  font-family: "Whitman Display", sans-serif;
+  line-height: 140%;
+}
+
+aside.article-share {
+  margin-top: 230px;
+}
+
+.topCaption {
+  z-index: 2;
+  width: 190px;
+  position: absolute;
+  right: -300px;
+  margin-top: 24px;
+}
+
+.article-byline-mod {
+  padding-bottom: 35px;
+}
+
+.article-byline {
+  border-right: none;
+  margin-top: 8px;
+}
+
+.article-byline a:hover {
+  color: #999;
+}
+
+.article-byline-mod:before {
+  display: none;
+}
+
+.article-byline-mod {
+  margin-top: 0;
+}
+
+.article-byline.notes {
+  font-size: .95em;
+}
+
+.article-dateline {
+  margin-top: 6px;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Whitman Display", sans-serif;
+  font-size: 5.55em;
+  line-height: 90%;
+  letter-spacing: -2px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+  text-align: center;
+  width: 25%;
+  text-shadow: 2px 2px 20px black, 2px 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: introFade 2s 4s ease-in forwards;
+}
+
+.project-body h3 {
+  font-family: "Whitman Display", sans-serif;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 16px;
+  font-size: 2.2em;
+}
+
+.related-caption,
+.related-caption.package-caption {
+  padding-top: 12px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.source {
+  font-size: .85em;
+  color: #666666;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .intro {
+    width: 100%;
+    font-size: 1.85em;
+  }
+
+  aside.article-share {
+    margin-top: 0;
+  }
+
+  h4.mobile.home-logo {
+    overflow: hidden;
+    *zoom: 1;
+    margin-top: -50px;
+  }
+
+  h1 {
+    font-size: 3.10em;
+    color: #000;
+    line-height: 100%;
+    top: 360px;
+    left: 0px;
+    color: #fff;
+    width: 100%;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.9);
+  }
+
+  .package-byline {
+    line-height: 110%;
+  }
+
+  .project-body {
+    visibility: visible;
+    position: relative;
+    display: block;
+  }
+
+  .project-body h3 {
+    margin-top: 30px;
+    font-size: 2em;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .topCaption,
+  .article-featured-gallery-mod {
+    display: none;
+  }
+}
+.projectGraphic.barChart {
+  width: 220px;
+  right: 0;
+  float: right;
+  margin: 10px -329px 10px 29px;
+  position: relative;
+  padding-bottom: 16px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.projectGraphic.mooseMap {
+  width: 425px;
+  right: 0;
+  float: right;
+  margin: 10px -329px 10px 29px;
+  position: relative;
+  padding-bottom: 16px;
+  overflow: hidden;
+  *zoom: 1;
+}
+.projectGraphic.mooseMap .rangeKeyBox {
+  margin-bottom: 7px;
+}
+.projectGraphic.mooseMap span.rangeKey {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #bbb095;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+.projectGraphic.mooseMap span.rangeKey1 {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #95c0cd;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+
+.projectGraphic.moosePie span.rangeKey2 {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #b4a88c;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+.projectGraphic.moosePie .project-table {
+  margin: -10px 0 12px 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .projectGraphic h4 {
+    font-size: 1.25em;
+    margin-bottom: 9px;
+    line-height: 120%;
+  }
+
+  .projectGraphic h4.label, .projectGraphic .rangeKeyBox {
+    text-align: left;
+    font-size: 1em;
+    left: 0;
+  }
+
+  /*MOBILE moosemap*/
+  .projectGraphic.mooseMap, .projectGraphic.moosePie, .projectGraphic.barChart {
+    width: 100%;
+    left: 0;
+    float: none;
+    margin: 2em 0;
+    position: relative;
+    padding-bottom: 16px;
+    overflow: hidden;
+    *zoom: 1;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+.hero {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  margin-bottom: 3em;
+  margin-top: -2px;
+  opacity: 0;
+  background-image: url("http://stmedia.stimg.co/mooseCover2.jpg?w=2500");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  animation: introFade 5s 3s ease-out forwards;
+}
+
+@keyframes introFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* hero kerning*/
+.av {
+  letter-spacing: -8px;
+}
+
+.scroll-label {
+  color: #fff;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+  font-size: 1em !important;
+  text-align: center;
+  margin-top: 36px !important;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  width: 15%;
+  z-index: 2;
+  opacity: 0;
+  animation: introScrollFade 5s 7s ease-out forwards;
+}
+.scroll-label img {
+  display: block;
+  margin: 6px auto 0 auto;
+  width: 30px;
+}
+
+@keyframes introScrollFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .65;
+  }
+}
+.mobile-hero {
+  display: none;
+}
+
+.isMobile .hero {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .av {
+    letter-spacing: -6px;
+  }
+
+  .isMobile .mobile-hero {
+    background: url("http://stmedia.stimg.co/mobileMooseCover2.jpg") center center no-repeat;
+    background-size: cover;
+    top: -70px !important;
+    height: 450px;
+    background-color: #000;
+  }
+
+  section.mobile-hero {
+    display: block;
+    width: 100%;
+    top: -70px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (orientation: portrait) {
+  .mfp-bg {
+    width: 1200px;
+    min-width: 100%;
+  }
+
+  .mfp-wrap {
+    width: 1200px;
+    min-width: 100%;
+  }
+
+  .mobile-hero.mobile {
+    height: 600px;
+    min-width: 1024px;
+  }
+}
+.embed {
+  width: 100%;
+  overflow: hidden;
+}
+
+.moose-interactive {
+  margin-left: -116px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 970px;
+}
+
+.package-byline {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #909090;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .moose-interactive {
+    margin-left: 0;
+    border: none;
+    padding-top: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+.photo-package {
+  float: left;
+  margin-bottom: 24px;
+}
+.photo-package .related-byline {
+  display: none;
+}
+.photo-package .related-media {
+  padding-bottom: 0;
+}
+
+/*MOOSE 1 Photo Package*/
+.photo-package-moose1 {
+  width: 400px;
+  float: right;
+  position: relative;
+  margin: 90px -329px 0 30px;
+}
+.photo-package-moose1 .photo2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  float: none;
+  width: 100%;
+  clear: none;
+}
+.photo-package-moose1 .photo2 .expand-icn-wrapper {
+  overflow: hidden;
+}
+
+/*MOOSE 2 Photo Package*/
+.photo-package-moose2 {
+  position: relative;
+  margin-bottom: 16px;
+  width: 970px;
+  margin-left: -117px;
+  margin-top: 14px;
+}
+.photo-package-moose2 .related-caption {
+  display: none;
+}
+.photo-package-moose2 .expand-icn-wrapper {
+  overflow: hidden;
+}
+.photo-package-moose2 .photo1 {
+  float: left;
+  width: 485px;
+  clear: none;
+  margin: 0;
+}
+.photo-package-moose2 .photo2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  float: right;
+  width: 470px;
+  clear: none;
+}
+.photo-package-moose2 .photo3 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  float: right;
+  width: 470px;
+  clear: none;
+}
+.photo-package-moose2 .related-caption.package-caption {
+  padding-top: 0;
+  display: block;
+}
+.photo-package-moose2 .package-byline {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #909090;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  /*MOBILE MOOSE1 and MOOSE2*/
+  .photo-package.photo-package-moose1, .photo-package.photo-package-moose2 {
+    width: 100%;
+    float: none;
+    position: relative;
+    margin: 2.5em 0 0 0 !important;
+  }
+
+  .photo-package.photo-package-moose2 .photo1, .photo-package.photo-package-moose2 .photo2, .photo-package.photo-package-moose2 .photo3 {
+    width: 100%;
+    float: none;
+    position: relative;
+    margin: 1em 0 0 0 !important;
+  }
+
+  .photo-package-moose2 .package-byline {
+    display: none;
+  }
+}
+.related-media.ticks-photo.size-m {
+  float: right;
+  width: 400px;
+  margin: 24px -329px 24px 60px;
+}
+.related-media.ticks-photo.size-m .related-byline {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .related-media.ticks-photo.size-m {
+    position: relative;
+    width: 100%;
+    margin: 24px auto 18px auto;
+    right: auto;
+    overflow: hidden;
+    *zoom: 1;
+    float: none;
+  }
+}
+.pixgrid img {
+  max-width: 90px;
+  display: block;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 0 5px 5px 0;
+  cursor: url(../images/misc/magnifying_glass.png), auto;
+}
+.pixgrid .preview img {
+  padding: 0;
+}
+
+.rclick .item {
+  display: block;
+  float: left;
+}
+.rclick .item img {
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+}
+.rclick .preview {
+  position: relative;
+}
+.rclick .preview img {
+  position: absolute;
+  z-index: 90;
+  max-width: 400px;
+  display: block;
+  border: 1px solid #FCF4DC;
+  margin: 0;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  -moz-box-shadow: black 5px 5px 12px;
+  -webkit-box-shadow: black 5px 5px 12px;
+  box-shadow: black 5px 5px 12px;
+}

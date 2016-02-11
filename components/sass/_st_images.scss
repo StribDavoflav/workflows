@@ -1,0 +1,21 @@
+.related-media.ticks-photo.size-m {
+  float: right;
+  width: 400px;
+  margin: 24px -329px 24px 60px;
+
+  .related-byline {
+      display: none;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+
+  .related-media.ticks-photo.size-m {
+      position: relative;
+      width: 100%;
+      margin: 24px auto 18px auto;
+      right: auto;
+      @include clearfix;
+      float: none;
+  }    
+}

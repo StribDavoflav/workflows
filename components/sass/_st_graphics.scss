@@ -1,0 +1,92 @@
+.projectGraphic.barChart {
+  width:220px;
+  right:0;
+  float: right;
+  margin: 10px -329px 10px 29px;
+  position: relative;
+  padding-bottom: 16px;
+  @include clearfix;
+}
+
+.projectGraphic.mooseMap {
+  width:425px;
+  right:0;
+  float: right;
+  margin: 10px -329px 10px 29px;
+  position: relative;
+  padding-bottom: 16px;
+  @include clearfix;
+
+  .rangeKeyBox {
+    margin-bottom:7px;
+  }
+
+  span.rangeKey {
+    display:block;
+    float:left;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: #bbb095;
+    margin-right: 10px;
+    margin-top:-2px;
+  }
+
+  span.rangeKey1 {
+    display:block;
+    float:left;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: #95c0cd;
+    margin-right: 10px;
+    margin-top:-2px;
+  } 
+}
+
+.projectGraphic.moosePie {
+  span.rangeKey2 {
+    display:block;
+    float:left;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: #b4a88c;
+    margin-right: 10px;
+    margin-top:-2px;
+  } 
+
+  .project-table {
+    margin:-10px 0 12px 0;
+  }
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+
+  .projectGraphic h4 {
+    font-size: 1.25em;
+    margin-bottom: 9px;
+    line-height: 120%
+  }
+
+  .projectGraphic h4.label, .projectGraphic .rangeKeyBox {
+    text-align:left;
+    font-size:1em;
+    left:0;
+  }
+
+   /*MOBILE moosemap*/ 
+  .projectGraphic.mooseMap, .projectGraphic.moosePie, .projectGraphic.barChart {
+    width:100%;
+    left:0;
+    float: none;
+    margin: 2em 0;
+    position: relative;
+    padding-bottom: 16px;
+    @include clearfix;
+    overflow:hidden;
+    text-align:center;
+  }
+}

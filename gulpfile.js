@@ -1,10 +1,12 @@
 var gulp = require('gulp'),
-	gutil = require('gulp-util'),
-	coffee = require('gulp-coffee'),
-	browserify = require('gulp-browserify'),
-	compass = require('gulp-compass'),
-	connect = require('gulp-connect'),
-	concat = require('gulp-concat');
+gutil = require('gulp-util'),
+coffee = require('gulp-coffee'),
+browserify = require('gulp-browserify'),
+compass = require('gulp-compass'),
+connect = require('gulp-connect'),
+concat = require('gulp-concat'),
+twig = require('gulp-twig');
+
 
 var env,
 coffeeSources,
@@ -35,6 +37,25 @@ jsSources = [
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
 jsonSources = [outputDir + 'js/*.json'];
+
+
+
+gulp.task('compile', function () {
+    'use strict';
+    // return gulp.src('./index.twig')
+    return gulp.src('~/news-platform/themes/desktop-theme/templates/override/_id/365163651.twig')
+        .pipe(twig({
+	        data: {
+                title: 'Gulp and Twig',
+                benefits: [
+                    'Fast',
+                    'Flexible',
+                    'Secure'
+                ]
+            }
+        }))
+        .pipe(gulp.dest('./'));
+});
 
 gulp.task('coffee', function() {
 	gulp.src(coffeeSources)
@@ -88,4 +109,4 @@ gulp.task('json', function() {
 		.pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'json', 'coffee', 'js', 'compass', 'connect', 'watch']);
+gulp.task('default', ['html', 'json', 'coffee', 'js', 'compass', 'connect', 'compile', 'watch']);
