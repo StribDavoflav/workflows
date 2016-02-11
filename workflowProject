@@ -1,8 +1,8 @@
-# Work flows 
+# Work flow for startribune.com news projects 
 
 ## What I want to do 
 
-Make a process in which a web designer will be able to quickly spool up a project that has a sass enabled, git versioning, hosting on gitHub, and uses the CMS as a data source for a twig override. Has a deploy process at the end that will push compiled css and js files out to AWS as well as finished html with StribTags to be placed in the body (source) of the Clickability article.
+Make a process in which a web designer will be able to quickly spool up a project that has sass enabled, versioning/hosting on gitHub, and uses the CMS as a data source for a twig override. Has a deploy process at the end that will push compiled css and js files out to AWS as well as finished html with StribTags to be placed in the body (source) of the Clickability article.
 
 1. set up a project workflow
 
@@ -10,7 +10,7 @@ Make a process in which a web designer will be able to quickly spool up a projec
 
 			a. html
 
-			b. JSON - no more apps.startribune.com needed
+			b. JSON - no more apps.startribune.com needed?
 
 			c. CSS with SCSS
 
@@ -18,7 +18,7 @@ Make a process in which a web designer will be able to quickly spool up a projec
 
 			e. JS and CoffeeScript
 
-	b. associate dir with gitHub on our news-dev repository
+	b. Move project into our 'news-dev' repository on gitHub
 		- allows versioning protection as well as a final archive when the project is done.  Elements in our projects become much more reusable beacuse they share a common SASS structure. Plus, anyone can grab the project and immediately have all of the dependencies pulled in when they use gulp.
 
 	c. Trying to figure out how to incorporate with twig AND the cms so the body source can be part of the liveReload.  Right now it is pulling in a external html file but that isn't parsing the StribTags into html, so the StribTags don't display. CMP API?
