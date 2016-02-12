@@ -12,6 +12,24 @@
   visibility: hidden;
   padding: 0 2%;
 }
+.project-body h3 {
+  font-family: "Whitman Display", sans-serif;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 16px;
+  font-size: 2.2em;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .project-body {
+    visibility: visible;
+    position: relative;
+    display: block;
+  }
+  .project-body h3 {
+    margin-top: 30px;
+    font-size: 2em;
+  }
+}
 
 .intro {
   width: 853px;
@@ -21,9 +39,20 @@
   font-family: "Whitman Display", sans-serif;
   line-height: 140%;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .intro {
+    width: 100%;
+    font-size: 1.85em;
+  }
+}
 
 aside.article-share {
   margin-top: 230px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  aside.article-share {
+    margin-top: 0;
+  }
 }
 
 .topCaption {
@@ -63,33 +92,6 @@ aside.article-share {
   margin-top: 6px;
 }
 
-h1 {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Whitman Display", sans-serif;
-  font-size: 5.55em;
-  line-height: 90%;
-  letter-spacing: -2px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  z-index: 2;
-  text-align: center;
-  width: 25%;
-  text-shadow: 2px 2px 20px black, 2px 2px 5px rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation: introFade 2s 4s ease-in forwards;
-}
-
-.project-body h3 {
-  font-family: "Whitman Display", sans-serif;
-  font-weight: 400;
-  margin-top: 60px;
-  margin-bottom: 16px;
-  font-size: 2.2em;
-}
-
 .related-caption,
 .related-caption.package-caption {
   padding-top: 12px;
@@ -103,45 +105,14 @@ h1 {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
-  .intro {
-    width: 100%;
-    font-size: 1.85em;
-  }
-
-  aside.article-share {
-    margin-top: 0;
-  }
-
   h4.mobile.home-logo {
     overflow: hidden;
     *zoom: 1;
     margin-top: -50px;
   }
 
-  h1 {
-    font-size: 3.10em;
-    color: #000;
-    line-height: 100%;
-    top: 360px;
-    left: 0px;
-    color: #fff;
-    width: 100%;
-    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.9);
-  }
-
   .package-byline {
     line-height: 110%;
-  }
-
-  .project-body {
-    visibility: visible;
-    position: relative;
-    display: block;
-  }
-
-  .project-body h3 {
-    margin-top: 30px;
-    font-size: 2em;
   }
 
   .desktop {
@@ -244,7 +215,7 @@ h1 {
   position: relative;
   height: 0;
   margin-bottom: 3em;
-  margin-top: -2px;
+  margin-top: -50px;
   opacity: 0;
   background-image: url("http://stmedia.stimg.co/mooseCover2.jpg?w=2500");
   background-position: center top;
@@ -252,6 +223,37 @@ h1 {
   background-repeat: no-repeat;
   background-color: #000;
   animation: introFade 5s 3s ease-out forwards;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Whitman Display", sans-serif;
+  font-size: 5.55em;
+  line-height: 90%;
+  letter-spacing: -2px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+  text-align: center;
+  width: 25%;
+  text-shadow: 2px 2px 20px black, 2px 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: introFade 2s 4s ease-in forwards;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  h1 {
+    font-size: 3.10em;
+    color: #000;
+    line-height: 100%;
+    top: 360px;
+    left: 0px;
+    color: #fff;
+    width: 100%;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.9);
+  }
 }
 
 @keyframes introFade {
@@ -266,6 +268,11 @@ h1 {
 .av {
   letter-spacing: -8px;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .av {
+    letter-spacing: -6px;
+  }
+}
 
 .scroll-label {
   color: #fff;
@@ -277,7 +284,7 @@ h1 {
   position: absolute;
   bottom: 20px;
   left: 50px;
-  width: 15%;
+  width: 25%;
   z-index: 2;
   opacity: 0;
   animation: introScrollFade 5s 7s ease-out forwards;
@@ -304,12 +311,34 @@ h1 {
   display: none;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
-  .av {
-    letter-spacing: -6px;
+.crop-gradient {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI1NiUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(56%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.2) 56%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.2) 56%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.2) 56%, rgba(0, 0, 0, 0.5) 100%);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  height: 15%;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .crop-gradient {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI3NiUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(76%, rgba(0, 0, 0, 0.65)), color-stop(100%, #000000));
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.65) 76%, #000000 100%);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.65) 76%, #000000 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.65) 76%, #000000 100%);
+    height: 35%;
   }
+}
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
   .isMobile .mobile-hero {
+    position: relative;
     background: url("http://stmedia.stimg.co/mobileMooseCover2.jpg") center center no-repeat;
     background-size: cover;
     top: -70px !important;
@@ -394,7 +423,8 @@ h1 {
   margin-bottom: 15px;
   float: none;
   width: 100%;
-  clear: none;
+  overflow: hidden;
+  *zoom: 1;
 }
 .photo-package-moose1 .photo2 .expand-icn-wrapper {
   overflow: hidden;
@@ -417,7 +447,8 @@ h1 {
 .photo-package-moose2 .photo1 {
   float: left;
   width: 485px;
-  clear: none;
+  overflow: hidden;
+  *zoom: 1;
   margin: 0;
 }
 .photo-package-moose2 .photo2 {
@@ -425,14 +456,16 @@ h1 {
   margin-bottom: 0;
   float: right;
   width: 470px;
-  clear: none;
+  overflow: hidden;
+  *zoom: 1;
 }
 .photo-package-moose2 .photo3 {
   margin-top: 15px;
   margin-bottom: 0;
   float: right;
   width: 470px;
-  clear: none;
+  overflow: hidden;
+  *zoom: 1;
 }
 .photo-package-moose2 .related-caption.package-caption {
   padding-top: 0;
@@ -487,43 +520,4 @@ h1 {
     *zoom: 1;
     float: none;
   }
-}
-.pixgrid img {
-  max-width: 90px;
-  display: block;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  padding: 0 5px 5px 0;
-  cursor: url(../images/misc/magnifying_glass.png), auto;
-}
-.pixgrid .preview img {
-  padding: 0;
-}
-
-.rclick .item {
-  display: block;
-  float: left;
-}
-.rclick .item img {
-  -moz-border-radius: none;
-  -webkit-border-radius: none;
-  border-radius: none;
-}
-.rclick .preview {
-  position: relative;
-}
-.rclick .preview img {
-  position: absolute;
-  z-index: 90;
-  max-width: 400px;
-  display: block;
-  border: 1px solid #FCF4DC;
-  margin: 0;
-  -moz-border-radius: none;
-  -webkit-border-radius: none;
-  border-radius: none;
-  -moz-box-shadow: black 5px 5px 12px;
-  -webkit-box-shadow: black 5px 5px 12px;
-  box-shadow: black 5px 5px 12px;
 }

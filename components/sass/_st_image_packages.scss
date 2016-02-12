@@ -24,7 +24,7 @@
     margin-bottom:15px;
     float: none;
     width: 100%;
-    clear: none;
+    @include clearfix;
 
     .expand-icn-wrapper {
       overflow: hidden;
@@ -51,7 +51,7 @@
   .photo1 {
     float: left;
     width: 485px;
-    clear: none;
+    @include clearfix;
     margin:0;
   }
 
@@ -60,7 +60,7 @@
     margin-bottom:0;
     float: right;
     width: 470px;
-    clear: none;
+    @include clearfix;
   }
 
   .photo3 {
@@ -68,7 +68,7 @@
     margin-bottom:0;
     float: right;
     width: 470px;
-    clear: none;
+    @include clearfix;
   }
 
   .related-caption.package-caption {
